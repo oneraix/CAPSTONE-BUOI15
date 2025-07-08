@@ -1,0 +1,32 @@
+{
+  "name": "capstone-buoi15",
+  "version": "1.0.0",
+  "description": "CAPSOTNE-BUOI15",
+  "main": "server.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --watch",
+    "start": "node --import=extensionless/register server.js",
+    "dev": "nodemon --import=extensionless/register  server.js",
+    "dev2": "node --import=extensionless/register --env-file=.env --watch server.js"
+  },
+  "author": "MinhHieu",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.11.0",
+    "@prisma/engines": "^6.11.1",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "extensionless": "^1.9.9",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "prisma": "^6.11.0"
+  }
+}
