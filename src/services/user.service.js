@@ -8,14 +8,14 @@ import { data } from "react-router-dom";
 
 const userService = {
    updateInfo: async (req) => {
-      const { name = undefined, decription = undefined, website = undefined } = req.body;
+      const { name = undefined, description = undefined, website = undefined } = req.body;
       const result = await prisma.users.updateMany({
          where: {
             id: req.user.id
          },
          data: {
             name: name,
-            decription: decription,
+            description: description,
             website: website
          },
       })
